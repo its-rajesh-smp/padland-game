@@ -8,11 +8,15 @@ public class PlayerDetails
 {
     public string playerId = "-1";
     public string playerName = "John Doe";
+    public int posX = 0;
+    public int posY = 0;
 
-    public PlayerDetails(string playerId, string playerName)
+    public PlayerDetails(string playerId, string playerName, int posX, int posY)
     {
         this.playerId = playerId;
         this.playerName = playerName;
+        this.posX = posX;
+        this.posY = posY;
     }
 }
 

@@ -1,0 +1,7 @@
+# Unity YAML files
+*.unity text eol=lf
+*.prefab text eol=lf
+*.asset text eol=lf
+
+# JSON files
+*.json text eol=lf

@@ -1,0 +1,8 @@
+LAYERING
+	Ground
+	GroundSurface
+		GroundSurface Shadow
+	Item
+		Item Shadow
+	Player
+		Player Shadow

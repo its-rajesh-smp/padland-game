@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rajesh SMP\\Desktop\\Personal\\padLand\\game\\padland\\Assembly-CSharp.csproj": {}
+    "C:\\Users\\Rajesh SMP\\Desktop\\Personal\\profilePad\\game\\padland\\Assembly-CSharp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rajesh SMP\\Desktop\\Personal\\padLand\\game\\padland\\Assembly-CSharp.csproj": {
+    "C:\\Users\\Rajesh SMP\\Desktop\\Personal\\profilePad\\game\\padland\\Assembly-CSharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rajesh SMP\\Desktop\\Personal\\padLand\\game\\padland\\Assembly-CSharp.csproj",
+        "projectUniqueName": "C:\\Users\\Rajesh SMP\\Desktop\\Personal\\profilePad\\game\\padland\\Assembly-CSharp.csproj",
         "projectName": "Assembly-CSharp",
-        "projectPath": "C:\\Users\\Rajesh SMP\\Desktop\\Personal\\padLand\\game\\padland\\Assembly-CSharp.csproj",
+        "projectPath": "C:\\Users\\Rajesh SMP\\Desktop\\Personal\\profilePad\\game\\padland\\Assembly-CSharp.csproj",
         "packagesPath": "C:\\Users\\Rajesh SMP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rajesh SMP\\Desktop\\Personal\\padLand\\game\\padland\\Temp\\obj\\Debug\\Assembly-CSharp\\",
+        "outputPath": "C:\\Users\\Rajesh SMP\\Desktop\\Personal\\profilePad\\game\\padland\\Temp\\obj\\Debug\\Assembly-CSharp\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
