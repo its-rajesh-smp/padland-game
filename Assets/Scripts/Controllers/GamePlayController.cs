@@ -6,6 +6,7 @@ using UnityEngine;
 public class GamePlayController : MonoBehaviour
 {
     public static GamePlayController instance;
+    public WebEventController webEventController;
 
     private Vector3 _DEFAULT_SPAWN_POINT = new Vector3(0.02f, 0.99f, 0);
     private List<PlayerController> spawnedPlayers = new();
@@ -53,6 +54,35 @@ public class GamePlayController : MonoBehaviour
             cinemachineVirtualCamera.Follow = spawnedPlayer.transform;
             cinemachineVirtualCamera.LookAt = spawnedPlayer.transform;
             currentPlayer = spawnedPlayer;
+        }
+    }
+
+    /// <summary>
+    /// Function to remove a player
+    /// </summary>
+    /// <param name="playerDetails"></param>
+    public void RemoveAPlayer(PlayerDetails playerDetails)
+    {
+        for (int i = 0; i < spawnedPlayers.Count; i++)
+        {
+            if (spawnedPlayers[i].playerDetails.playerId == playerDetails.playerId)
+            {
+                Destroy(spawnedPlayers[i].gameObject);
+                spawnedPlayers.RemoveAt(i);
+            }
+        }
+    }
+
+
+
+    public void MoveAPlayer(PlayerDetails playerDetails)
+    {
+        for (int i = 0; i < spawnedPlayers.Count; i++)
+        {
+            if (spawnedPlayers[i].playerDetails.playerId == playerDetails.playerId)
+            {
+                spawnedPlayers[i].transform.position = new Vector3(playerDetails.posX, playerDetails.posY, 0);
+            }
         }
     }
 }

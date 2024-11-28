@@ -20,12 +20,11 @@ public class PlayerDetails
     }
 }
 
-
 public class PlayerController : MonoBehaviour
 {
     private const int _PLAYER_SPEED = 3;
     private Animator animator;
-    private PlayerDetails _playerDetails;
+    public PlayerDetails playerDetails;
 
     [Header("UI References")]
     public TextMeshProUGUI playerNameText;
@@ -64,11 +63,21 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("IsMoving", dir.magnitude > 0);
 
         GetComponent<Rigidbody2D>().velocity = _PLAYER_SPEED * dir;
+
+        // check if there is a change in position
+        if ((int)transform.position.x != playerDetails.posX ||
+            (int)transform.position.y != playerDetails.posY)
+        {
+            playerDetails.posX = (int)transform.position.x;
+            playerDetails.posY = (int)transform.position.y;
+            GamePlayController.instance.webEventController.PlayerMoveEmitter(playerDetails);
+        }
     }
 
-    public void SetPlayerDetails(PlayerDetails playerDetails)
+    public void SetPlayerDetails(PlayerDetails _playerDetails)
     {
-        _playerDetails = playerDetails;
+        playerDetails = _playerDetails;
         playerNameText.text = _playerDetails.playerName;
     }
 }
+
