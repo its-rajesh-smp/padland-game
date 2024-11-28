@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "c2pLWEAlxHo=",
+  "dgSpecHash": "2eLr5cuMeGE=",
   "success": true,
   "projectFilePath": "C:\\Users\\Rajesh SMP\\Desktop\\Personal\\profilePad\\game\\padland\\Assembly-CSharp.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Rajesh SMP\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
