@@ -27,8 +27,8 @@ public class GamePlayController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PlayerDetails playerDetails = new PlayerDetails("1", "John Doe", 0, 0);
-        SpawnAPlayer(playerDetails, true);
+        // PlayerDetails playerDetails = new PlayerDetails("1", "John Doe", 0, 0);
+        // SpawnAPlayer(playerDetails, true);
     }
 
 

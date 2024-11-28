@@ -8,10 +8,10 @@ public class PlayerDetails
 {
     public string playerId = "-1";
     public string playerName = "John Doe";
-    public int posX = 0;
-    public int posY = 0;
+    public float posX = 0;
+    public float posY = 0;
 
-    public PlayerDetails(string playerId, string playerName, int posX, int posY)
+    public PlayerDetails(string playerId, string playerName, float posX, float posY)
     {
         this.playerId = playerId;
         this.playerName = playerName;
@@ -65,11 +65,11 @@ public class PlayerController : MonoBehaviour
         GetComponent<Rigidbody2D>().velocity = _PLAYER_SPEED * dir;
 
         // check if there is a change in position
-        if ((int)transform.position.x != playerDetails.posX ||
-            (int)transform.position.y != playerDetails.posY)
+        if (transform.position.x != playerDetails.posX ||
+            transform.position.y != playerDetails.posY)
         {
-            playerDetails.posX = (int)transform.position.x;
-            playerDetails.posY = (int)transform.position.y;
+            playerDetails.posX = transform.position.x;
+            playerDetails.posY = transform.position.y;
             GamePlayController.instance.webEventController.PlayerMoveEmitter(playerDetails);
         }
     }
